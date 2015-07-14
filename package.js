@@ -1,10 +1,10 @@
 Package.describe({
   name: 'miguelalarcos:simple-intro',
-  version: '0.0.1',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'A simple intro (tutorial) for Meteor apps.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/miguelalarcos/simple-intro.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -25,6 +25,7 @@ Package.onUse(function(api) {
   api.addFiles('style.styl', 'client');
   api.addFiles('simple-intro.coffee', 'client');
   api.export('startTutorial');
+  api.export('introSteps');
 });
 
 /*
