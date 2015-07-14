@@ -1,0 +1,11 @@
+<template name="intro">
+    {{#if introShow}}
+    <div id='intro-master' draggable="true">
+        {{> Template.dynamic template=template}}
+        <div>
+            <span class="back-intro blue">anterior</span>
+            <span class="next-intro blue">siguiente</span>
+        </div>
+    </div>
+    {{/if}}
+</template>
