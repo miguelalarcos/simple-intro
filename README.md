@@ -36,3 +36,5 @@ Template.body.events
     game over!
 </template>
 ```
+
+The popup window that guides you through the tutorial is draggable.
