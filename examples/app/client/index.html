@@ -1,12 +1,16 @@
 <body>
     <button class="start-tutorial">start tutorial</button>
-    <span class="blue intro intro-1">click</span>
-    <span class="blue intro intro-2">click 2</span>
+    <span id="primero" class="blue intro intro-1">click</span>
+    <span id="segundo" class="blue intro intro-2">click 2</span>
     {{> intro }}
 </body>
 
+<template name="intro-0">
+    <b>Hola :)</b>, este es el tutorial de la app.
+</template>
+
 <template name="intro-1">
-    hola :)
+    Este botón hace un <em>console.log</em>.
 </template>
 
 <template name="intro-2">
