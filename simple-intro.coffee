@@ -20,6 +20,9 @@ Template.intro.events
     back = introCurrent.get() - 1
     if back >= 0
       introCurrent.set(back)
+  'click .close-intro': (e, t) ->
+    introShow.set false
+    $('.intro').removeClass('current-intro')
 
 startTutorial = ->
   introCurrent.set 0
