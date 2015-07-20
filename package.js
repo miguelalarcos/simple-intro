@@ -1,6 +1,6 @@
 Package.describe({
   name: 'miguelalarcos:simple-intro',
-  version: '0.1.2',
+  version: '0.1.3',
   // Brief, one-line summary of the package.
   summary: 'A simple intro (tutorial) for Meteor apps.',
   // URL to the Git repository containing the source code for this package.
@@ -20,6 +20,7 @@ Package.onUse(function(api) {
   api.use('templating');
   api.use('underscore');
   api.use('reactive-var');
+  api.use('pagebakers:ionicons@2.0.1_1');
 
   api.addFiles('template.html', 'client');
   api.addFiles('style.styl', 'client');
